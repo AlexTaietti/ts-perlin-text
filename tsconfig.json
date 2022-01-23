@@ -1,0 +1,18 @@
+{
+   "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "noUnusedParameters": true,
+      "moduleResolution": "node",
+      "noImplicitReturns": true,
+      "esModuleInterop": true,
+      "noUnusedLocals": true,
+      "strict": true,
+      "jsx": "react-jsx"
+   },
+   "include": [
+      "src"
+   ],
+   "exclude": [
+      "node_modules"
+   ]
+}
