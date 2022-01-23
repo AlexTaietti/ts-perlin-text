@@ -29,7 +29,7 @@ export class PerlinText {
       this.fontSize = fontSize;
       this.fontFamily = fontFamily;
       this.container = container;
-      [this.canvas, this.context] = createFittingCanvas(container, this.pixelRatio);
+      [this.canvas, this.context] = createFittingCanvas(container);
       this.referenceCanvas = cloneCanvas(this.canvas);
       this.imageData = undefined;
       this.PerlinParticles = new PerlinParticles(this.context.canvas.width, this.context.canvas.height, this.pixelRatio);

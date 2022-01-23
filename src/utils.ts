@@ -30,10 +30,11 @@ export const cloneCanvas = (canvas: HTMLCanvasElement) => {
  
  };
  
- export const createFittingCanvas = (container: HTMLElement, pixelRatio: number): [HTMLCanvasElement, CanvasRenderingContext2D] => {
+ export const createFittingCanvas = (container: HTMLElement): [HTMLCanvasElement, CanvasRenderingContext2D] => {
  
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
+    const pixelRatio = window.devicePixelRatio;
  
     if (!context) throw new Error(`2d context not supported );`);
  
